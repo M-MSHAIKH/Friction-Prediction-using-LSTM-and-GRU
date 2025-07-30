@@ -30,6 +30,10 @@ Below are the detailed architectures of the models used for friction prediction:
 
 📘 LSTM Model
 
+Batch Size: 64 (64 Sequences per batch)
+Sequence Length: 10 (Each sequence has 10 time steps data and each time step has 6 different input data)
+Hidden Size: 64 (At every time step, the LSTM takes in an input (6 input features) and outputs a hidden state vector of length 64.)
+
 ```text
 ==========================================================================================
 Layer (type:depth-idx)                   Output Shape              Param #
