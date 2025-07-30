@@ -38,15 +38,7 @@ The goal is to predict the tire-road friction coefficient in real time using tim
     pip install -r requirements.txt
     ```
 
-3. Train the model:
-    ```bash
-    python train.py
-    ```
-
-4. Predict using test data:
-    ```bash
-    python predict.py
-    ```
+After installing all required dependencies you can run the jupyter notebook or can run as python file.
 
 ## 📁 Dataset
 
