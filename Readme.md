@@ -29,7 +29,7 @@ The goal is to predict the tire-road friction coefficient in real time using tim
 Below are the detailed architectures of the models used for friction prediction:
 
 📘 LSTM Model
-
+'''text
 ==========================================================================================
 Layer (type:depth-idx)                   Output Shape              Param #
 ==========================================================================================
@@ -47,9 +47,10 @@ Forward/backward pass size (MB): 0.33
 Params size (MB): 0.21
 Estimated Total Size (MB): 0.55
 ==========================================================================================
+'''
 
 📗 GRU Model
-
+'''text
 ==========================================================================================
 Layer (type:depth-idx)                   Output Shape              Param #
 ==========================================================================================
@@ -67,7 +68,7 @@ Forward/backward pass size (MB): 0.33
 Params size (MB): 0.16
 Estimated Total Size (MB): 0.50
 ==========================================================================================
-
+'''
 
 ## 🚀 How to Run
 
