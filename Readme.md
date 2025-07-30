@@ -25,6 +25,50 @@ The goal is to predict the tire-road friction coefficient in real time using tim
 - scikit-learn
 - Matplotlib
 
+## 🧠 Model Architectures
+Below are the detailed architectures of the models used for friction prediction:
+
+📘 LSTM Model
+
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+FrictionLSTM                             [64, 2]                   --
+├─LSTM: 1-1                              [64, 10, 64]              51,712
+├─Linear: 1-2                            [64, 2]                   130
+==========================================================================================
+Total params: 51,842
+Trainable params: 51,842
+Non-trainable params: 0
+Total mult-adds (M): 33.10
+==========================================================================================
+Input size (MB): 0.02
+Forward/backward pass size (MB): 0.33
+Params size (MB): 0.21
+Estimated Total Size (MB): 0.55
+==========================================================================================
+
+📗 GRU Model
+
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+FrictionGRU                              [64, 2]                   --
+├─GRU: 1-1                               [64, 10, 64]              38,784
+├─Linear: 1-2                            [64, 2]                   130
+==========================================================================================
+Total params: 38,914
+Trainable params: 38,914
+Non-trainable params: 0
+Total mult-adds (M): 24.83
+==========================================================================================
+Input size (MB): 0.02
+Forward/backward pass size (MB): 0.33
+Params size (MB): 0.16
+Estimated Total Size (MB): 0.50
+==========================================================================================
+
+
 ## 🚀 How to Run
 
 1. Clone this repo:
