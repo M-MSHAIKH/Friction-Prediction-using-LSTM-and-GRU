@@ -30,9 +30,10 @@ Below are the detailed architectures of the models used for friction prediction:
 
 📘 LSTM Model
 
-Batch Size: 64 (64 Sequences per batch)
-Sequence Length: 10 (Each sequence has 10 time steps data and each time step has 6 different input data)
-Hidden Size: 64 (At every time step, the LSTM takes in an input (6 input features) and outputs a hidden state vector of length 64.)
+- Batch Size: 64 (64 Sequences per batch)
+- Sequence Length: 10 (Each sequence has 10 time steps data and each time step has 6 different input data. This is done by create_sequences function)
+- Hidden Size: 64 (At every time step, the LSTM or GRU takes in an input (6 input features) and outputs a hidden state vector of length
+  64.)
 
 ```text
 ==========================================================================================
@@ -99,7 +100,7 @@ It contains time-series vehicle dynamics data collected from test drives on diff
 Features include:
 - Steering angle (left/right)
 - Steering rate (left/right)
-- Steering torque etc
+- Steering torque (left/right) etc.
 
 The data was preprocessed using windowed sequences for training the LSTM model.
 
