@@ -95,7 +95,7 @@ After installing all required dependencies you can run the jupyter notebook or c
 ## 📁 Dataset
 
 The dataset used in this project was obtained from [P1 Garage @ Bucknell University](https://www.projects.bucknell.edu/Beal_Automotive/).  
-It contains time-series vehicle dynamics data collected from test drives on different surfaces (e.g., dry and wet asphalt).
+It contains time-series vehicle dynamics data collected from test drives on different surfaces (e.g.,wet asphalt, ice and ice sheet surfaces).
 
 Features include:
 - Steering angle (left/right)
